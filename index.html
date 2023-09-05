@@ -33,11 +33,13 @@
             text-align: left;
             padding: 0; /* Remove padding */
             border: 1px solid #ddd; /* Optional: Add a border to separate portfolio items */
+            height: 300px; /* Set the desired fixed height for all portfolio items */
             overflow: hidden; /* Ensure the border wraps around the image */
         }
         .portfolio-item img {
             width: 100%;
-            height: auto;
+            height: 100%; /* Fill the entire container with the image */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
             display: block; /* Remove extra space below inline images */
         }
         footer {
